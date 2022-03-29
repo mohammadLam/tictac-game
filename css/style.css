@@ -1,0 +1,65 @@
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+::root {
+    --primary: red;
+}
+
+body {
+    font-family: 'Poppins';
+}
+
+.container {
+    display: flex;
+    width: 500px; height: 500px;
+    margin: auto; top: 0; bottom: 0; left: 0; right: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+}
+.box {
+    width: calc(500px / 3); height: calc(500px / 3);
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 90px;
+}
+
+.circle {
+    width: 130px; height: 130px;
+    border: 7px solid grey;
+    border-radius: 50%;
+}
+
+.box:nth-child(1) {
+    border-top: none;
+    border-left: none
+}
+.box:nth-child(2) {
+    border-top: none
+}
+.box:nth-child(3) {
+    border-top: none;
+    border-right: none;
+}
+.box:nth-child(4) {
+    border-left: none
+}
+.box:nth-child(6) {
+    border-right: none;
+}
+.box:nth-child(7) {
+    border-left: none;
+    border-bottom: 0
+}
+.box:nth-child(8) {
+    border-bottom: 0
+}
+.box:nth-child(9) {
+    border-right: none;
+    border-bottom: 0
+}
